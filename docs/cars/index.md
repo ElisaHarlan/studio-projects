@@ -9,7 +9,7 @@ This is not the only incident which shows that the links between politics and th
 The figure below shows the contacts between German businesses that either make their money with cars or are automotive suppliers. Further displayed are contacts with the labour unions, such as IG Metall that represent the employees of the metal, electrical and steel sector. This is also important to investigate which other actors that are involved in the sector, are able to articulate their interests in transport policy.
  
 
-![](READY_FINAL_connections.png)
+![](Sankey_business_contact.png)
 
 
 Many processes in transport policy raise the question of the influence of the automobile industry and other actors on politics. As the party DIE LINKE writes in its "Kleine Anfrage", this reaches from the expansion of the public transport sector as a public-private partnership (PPP) to the negotiations on the reduction of CO2 values ​​for vehicles at European level. The discussion of greenhouse gas and pollutant emissions from motor vehicles is of great public interest in particular, especially in cities like Stuttgart, where particulate matters regularly hit the threshold that was set by the European Union.
@@ -18,7 +18,7 @@ To melt down the manifold relationships and focus on the ten most frequent conta
 
 
 
-![](READY_FINAL_Top_10_Lobbyists_Companies.png)
+![](Top_10_businesses_contacts.png)
 
 
 
@@ -29,28 +29,28 @@ As one can see, one of the most bustling figures is Matthias Wissmann who is the
 The summit was highly critisized for being too vague about the concrete measures that shall be taken with regard to reduce the air pollution in German cities. 
 This vagueness has a long tradition in Germany: In March 2015 the Federal Government quickly changed its attitude to more stringent EU abatement tests. Among others, the former Minister of Transport and today's VDA boss Matthias Wissmann intervened. In the end, the government passed a concrete date for the introduction of the tests and made significant concessions with regard to the manufacturers.
 
-![](READY_FINAL_personal_contacts.png)
+![](Sankey_personal_contacts.png)
 
 The figure below also just melts down the data that was shown before in order to show the exact number of the Top 5 interactions between the managers and the government. 
 
-![](READY_FINAL_Top_5_Manager.png)
+![](Top_5_Managers_in_Contact_Ministries.png)
 
 The second part of the project deals with subsidies that German carmakers receive from the Government for different purposes. A significant part of the money goes to "Research and Development" or "General Investment".
 At least in the present documents (for sources, see link below) published by the government it does not become entirely clear into which projects the money goes to. 
 
 As expected, the most money is distributed by the Federal Ministry for Economic Affairs and Energy, followed closely by the Ministry for Education and Science. 
 
-![](READY_FINAL_Top_4_Ministries.png)
+![](Total_subsidies.png)
 
 As the barchart below is indicating, big players, like Siemens and Daimler are profiting the most from those kind of subsidies. During the last years, Siemens was able to receive more than 250 Mio. Euro from the government for research purposes. 
 
 
-![](READY_FINAL_Top_5_Money_Companies.png)
+![](Top_5_Businesses_Subsidies.png)
 
 Looking at how the ministries distribute their money, it can be seen that some ministries favor certain companies. 
 
 
-![](READY_FINAL_Top_10_Money_Ministry_Companies.png)
+![](Top_10_Money_to_Business.png)
 
 The data used for this project is extracted from two so-called "Kleine Anfrage". Opposition parties in the parliament do have the option to write requests to the government to which the government is obliged to answer in a certain time span. 
 
