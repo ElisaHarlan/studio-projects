@@ -9,14 +9,14 @@ This is not the only incident which shows that the links between politics and th
 The figure below shows the contacts between German businesses that either make their money with cars or are automotive suppliers. Further displayed are contacts with the labour unions, such as IG Metall that represent the employees of the metal, electrical and steel sector. This is also important to investigate which other actors that are involved in the sector, are able to articulate their interests in transport policy.
  
 
-![](NEW_4.png)
+![](READY_FINAL_connections.png)
 
 
 Many processes in transport policy raise the question of the influence of the automobile industry and other actors on politics. As the party DIE LINKE writes in its "Kleine Anfrage", this reaches from the expansion of the public transport sector as a public-private partnership (PPP) to the negotiations on the reduction of CO2 values ​​for vehicles at European level. The discussion of greenhouse gas and pollutant emissions from motor vehicles is of great public interest in particular, especially in cities like Stuttgart, where particulate matters regularly hit the threshold that was set by the European Union.
 
 To melt down the manifold relationships and focus on the ten most frequent contacts, Volkswagen (VW AG) played a prominent role in interacting with the ministries with slightly more than 60 contacts in the current legislative turn. Volkswagen is the largest European automotive manufacturer and holds the top position world wide together with Toyota and General Motors. 
 
-![](NEW_5.png)
+
 
 ![](READY_FINAL_Top_10_Lobbyists_Companies.png)
 
@@ -45,7 +45,7 @@ As expected, the most money is distributed by the Federal Ministry for Economic 
 As the barchart below is indicating, big players, like Siemens and Daimler are profiting the most from those kind of subsidies. During the last years, Siemens was able to receive more than 250 Mio. Euro from the government for research purposes. 
 
 
-![](READY_FINAL_Top_5_Money_Companiessvg.png)
+![](READY_FINAL_Top_5_Money_Companies.png)
 
 Looking at how the ministries distribute their money, it can be seen that some ministries favor certain companies. 
 
