@@ -16,6 +16,7 @@ Many processes in transport policy raise the question of the influence of the au
 
 To melt down the manifold relationships and focus on the ten most frequent contacts, Volkswagen (VW AG) played a prominent role in interacting with the ministries with slightly more than 60 contacts in the current legislative turn. Volkswagen is the largest European automotive manufacturer and holds the top position world wide together with Toyota and General Motors. 
 
+![](NEW_5.png)
 
 ![](READY_FINAL_Top_10_Lobbyists_Companies.png)
 
