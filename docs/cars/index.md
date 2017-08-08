@@ -9,7 +9,7 @@ This is not the only incident which shows that the links between politics and th
 The figure below shows the contacts between German businesses that either make their money with cars or are automotive suppliers. Further displayed are contacts with the labour unions, such as IG Metall that represent the employees of the metal, electrical and steel sector. This is also important to investigate which other actors that are involved in the sector, are able to articulate their interests in transport policy.
  
 
-![](NEW_2.png)
+![](NEW_4.png)
 
 
 Many processes in transport policy raise the question of the influence of the automobile industry and other actors on politics. As the party DIE LINKE writes in its "Kleine Anfrage", this reaches from the expansion of the public transport sector as a public-private partnership (PPP) to the negotiations on the reduction of CO2 values ​​for vehicles at European level. The discussion of greenhouse gas and pollutant emissions from motor vehicles is of great public interest in particular, especially in cities like Stuttgart, where particulate matters regularly hit the threshold that was set by the European Union.
