@@ -1,12 +1,8 @@
 ---
 
-title: About
-permalink: /about
+About
+
 
 ---
 
-This is a longer about me page
-
-About me
-
-About me
+journalist // data // corruption // economics // politics

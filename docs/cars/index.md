@@ -1,12 +1,15 @@
-## The cozy relation between the German Carindustry and the Government
+# The cozy relation between the German Carindustry and the Government
 
-Emmissions rigging and the accusation of forming a cartel seem to only be the tip of the iceberg of close links in Germany’s car industry. The weekly magazine "DER SPIEGEL" recently disclosed that automotive companies regularly discussed their manipulations with each other. As a result the manufacturers are threatening cartel procedures and new billions of penalty in both the US and the EU Commission. 
 
-The most current case in the history of industry-related affairs is about Stephan Weil, the Lower Saxony Minister President who gave one of his speeches to Volkswagen in advance. The topic: the emission scandal. Only for legal examination, he claims. 
+by Elisa Harlan
 
-This is not the only incident which shows that the links between politics and the automobile industry in Germany are too narrow. Effective control does not take place because many politicians feel responsible for securing jobs in their constituencies. And there are many: More than 800.000 jobs depend directly or indirectly on the car industry.
+Emmissions rigging and the accusation of forming a cartel seem to only be the tip of the iceberg of close links in Germany’s car industry. The weekly magazine "DER SPIEGEL" recently disclosed that the automotive companies have been discussing their manipulations with each other. As a result the manufacturers are threatening cartel procedures and new millions of penalty from both the US and the EU Commission. 
 
-The figure below shows the contacts between German businesses that either make their money with cars or are automotive suppliers. Further displayed are contacts with the labour unions, such as IG Metall that represent the employees of the metal, electrical and steel sector. This is also important to investigate which other actors that are involved in the sector, are able to articulate their interests in transport policy.
+The most current scandal in the history of industry-related affairs is about Stephan Weil, the Lower Saxony Minister President who gave one of his speeches to Volkswagen in advance. The topic: the emission scandal. Only for legal examination, he claims. 
+
+This is one of many incidents which show the close ties between politics and the automobile industry. Effective control does not take place because many politicians feel responsible for securing jobs in their constituencies. And there are many: More than 800.000 jobs depend directly or indirectly on the car industry.
+
+The figure below shows the contacts between German businesses that either make their money with cars or are automotive suppliers. Further displayed are contacts with the labour unions, such as IG Metall that represent the employees of the metal, electrical and steel sector. It is also important to investigate which other actors may have a vested interest in transport policy. 
  
 
 ![](Sankey_business_contact.png)
@@ -43,7 +46,7 @@ As expected, the most money is distributed by the Federal Ministry for Economic 
 ![](Total_subsidies.png)
 
 As the barchart below is indicating, big players, like Siemens and Daimler are profiting the most from those kind of subsidies. During the last years, Siemens was able to receive more than 250 Mio. Euro from the government for research purposes. 
-
+ 
 
 ![](Top_5_Businesses_Subsidies.png)
 
