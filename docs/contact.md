@@ -1,6 +1,6 @@
 ---
 
-Contact me
+title: Contact me
 
 ---
 
