@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>The Cats of New York City</title>
+
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<!-- 
+THESE ARE CALLS TO DIFFERENT EXTERNAL FILES
+LISA HAS A CSS STYLESHEET THAT YOU NEED
+THE NEXT IS THE JAVASCRIPT LIBRARY FOR LEAFLET
+AND THE FINAL ONE IS THE LIBRARY FOR JQUERY, WHICH I USE FOR THE PULLDOWN MENU.
+ -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- 
+THESE ARE CSS STYLES WHAT YOU SHOULD FREELY PLAY WITH
+THE STYLES THAT BEGIN WITH # RELATE TO IDS, THE ONES THAT BEGIN WITH . RELATE TO CLASSES
+WHEN YOU GOT EVERYTHING WORKING YOU CAN PLAY WITH THESE AND ADD TO THESE 
+TO MAKE YOUR FONTS AND LAYOUTS NICE AND LOVELY
+ -->
+
+	<style>
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+	#map {position: absolute; top: 60px; left: 10px; width: 800px; height: 450px; z-index:1; }
+	#articleTitle {position: absolute; left: 830px; top: 1px; margin:1px; width: 300px; height: 500px; overflow: scroll;
+    overflow-x: hidden; z-index:5;} 
+	#articlePlace {position: absolute; left: 820px; top: 60px; margin:15px; width: 300px; height: 500px; overflow: scroll;
+    overflow-x: hidden; z-index:5;} 
+    h1 {font: 30px Arial, Helvetica, sans-serif;}
+    p{font: 15px Arial; color: white; left:100px;}
+    #Title {position: absolute; left: 10px; top: 10px; margin:1px; z-index:5;} 
+    body{background: gray; font: 30px Arial, Helvetica, sans-serif; color: black;}
+#movethis{left: 480px; top: 80px;  z-index:10;} 
+    #select-menu{position: absolute; left: 80px; top: 80px;  z-index:10;} 
+.info { padding: 6px 8px; font: 14px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
+.legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }</style>
+</head>
+
+<!-- THE BODY OF THE HTML BEGINS HERE -->
+
+<body>
+
+<!-- 
+HERE IS MY VERY UNBEAUTIFUL BUT FUNCTIONALLY AWESOME DROP-DOWN MENU
+THE ID select–menu IS USED BY THE JQUERY FUNCTION WAY DOWN AT THE BOTTOM
+ -->
+
+<!-- 
+THE TWO DIVS BELOW ARE SUPER IMPORTANT: THEY ARE WHERE THE MAP WILL GO, AND YOUR ARTICLE TEXT WILL GO
+YOU WILL CERTAINLY WANT TO STYLE THESE, BOTH THEIR PLACEMENT AND CONTENT 
+WHEN YOU'RE DONE WITH ALL THE FANCY FUNCTIONALITY
+ -->
+<div id='Title'><span style="font-weight:bold; color:#C58E65">The fat cats of Brooklyn or the paradise where Smushface lives</span><iframe width="0" height="0" src="https://www.youtube.com/embed/4IP_E7efGWE?start=10&autoplay=1" frameborder="0" allowfullscreen></iframe></div>
+
+<div id='articlePlace'>
+
+<img src="tokyo-stray-cat-photography-busanyan-masayuki-oki-japan-a49.jpg"
+width="200" height="200" >
+
+
+
+<p><span style="text-decoration: underline;">Brooklyn has a cat problem</span></p>
+<div class="page" title="Page 1">
+<div class="layoutArea">
+<div class="column">
+<p>In only 10 months in 2015, there <br /> were over <span style="color:#C58E65">1500</span> consumer complaints <br /> out of  <span style="color:#C58E65">3688</span> cases made to the <br /> Food Safety and Inspection division that contain the words "cat" or "cats." In those cases, cats were seen in food shops, <br />  delis and restaurants making their <br /> business or just straying around. <br /> Most of the times cats were seen in the basement or the mainfloor <br /> of the buildings. Interestingly, in around <br /> 150 cases, even dogs AND cats were <br />  in the food location.&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id='map'></div>
+
+
+
+<!-- 
+THIS IS WHERE THE BROWSER LOADS IN YOUR GEO JASON INFORMATION
+MAKING IN A JAVASCRIPT FILE, RATHER THAN A GEO JASON FILE
+ALLOWS YOU TO LOAD IT LOCALLY WITHOUT DEALING WITH SETTING UP SERVERS ON YOUR MACHINE.
+ -->
+
+<script type="text/javascript" src="points-json_Data_Supremecourt.js"></script>
+
+<!-- 
+HERE BEGINS ALL THE SCRIPT THAT SETS UP THE MAP 
+ALL THE COMMENTS FROM HERE WE'LL BE IN JAVASCRIPT COMMENTS //
+ -->
+
+<script type="text/javascript">
+
+// THIS INITIALIZES THE FIRST VARIABLE CALLED MAP
+// THERE IS NO SET VIEW HERE, BECAUSE WE ARE USING FITBOUNDS()
+// TO AUTOMATICALLY CENTER AND ZOOM ON OUR POINTS
+
+	var map = L.map('map').setView([40.686438, -73.968286], 11)
+
+// THIS SETS THE BASE LAYER OF THE MAP -- USING BACKGROUND TILES
+
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.light' // comment out id, change to .streets or something similar
+	}).addTo(map);
+
+
+// THESE LINES ADD THE LITTLE INFO WINDOW IN THE UPPER RIGHT CORNER 
+// (YOU CAN CHANGE WHERE GOES BY EDITING THE STYLES FOR #INFO)
+// NOTE THAT "L.CONTIROL()" -- MEANS THAT THIS IS A LEAFLET METHOD
+// FOR CREATING A CONTROL WINDOW.
+
+	var info = L.control();
+
+	info.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info');
+		this.update();
+		return this._div;
+	};
+
+	info.update = function (props) {
+		this._div.innerHTML = '<h4>CAT LOCATION</h4>' +  (props ?
+			'Location: ' + props.TRADENAME + 
+			'<br /><br />  What happend? ' + props.DEFTEXT + '<br /> Street: ' + props.STREET+ '<br /> Neighborhood: ' + props.CITY
+			: 'Hover on a cat point');
+	};
+
+	info.addTo(map);
+
+
+// HERE ARE YOUR STYLES FOR THE SHAPES--THERE'RE A LOT OF DIFFERENT CONTROLS
+// EVERYTHING THAT IS SET AS A VALUE MEANS THAT THAT'S STYLE IS FOR EVERY SINGLE POINT
+// THESE LINES:
+// 			radius: feature.properties.radius,
+// 			fillColor: feature.properties.color
+// SETS THE COLOR AND RADIUS BASED ON WHAT YOU PUT IN YOUR GEOJSON DOC "color:" and "radius:"
+// YOU COULD THEORETICALLY DO THAT FOR EVERY SINGLE ONE OF THE STYLES
+
+	function style(feature) { //styles for the actual layer on the map 
+		
+		var gender_colors = ''
+		
+		if (feature.properties.proportions_M > 67) {
+			gender_colors = '#e31a1c';
+		} else {
+			gender_colors = '#6a3d9a';
+		};
+		
+
+		return {
+			weight: 2,
+			opacity: 1,
+			color: 'black',
+			fillOpacity: 0.5,
+			radius: 1,
+			fillColor: gender_colors
+		};
+	}
+// THIS FUNCTION CONTROLS WHAT HAPPENS WHEN YOU HOVER OVER A SHAPE
+// IT CHANGES SOME OF THE STYLES (HIGHLIGHTING THAT SHAPE)
+// AND IT ALSO UPDATES THE TEXT INSIDE THE INFOBOX
+
+	function highlightFeature(e) {
+		var layer = e.target;
+
+		layer.setStyle({
+			weight: 5,
+			color: '#666',
+			fillOpacity: 1
+		});
+
+		if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+			layer.bringToFront();
+		}
+
+		info.update(layer.feature.properties);
+	}
+
+// THIS FUNCTION CHANGES THE ARTICLE TEXT ON THE RIGHT SIDE OF THE PAGE
+// IT IS CALLED WHENEVER YOU CLICK ON A SHAPE
+
+	function updateArticle(e) {
+		var layer = e.target;
+		var props = layer.feature.properties;
+		var articleDIV = document.getElementById("articlePlace");
+		articleDIV.innerHTML =  '<h1><</span>'
+	}
+
+// THIS PART IS A LITTLE COMPLICATED
+// IT IS CREATING A LAYER FOR YOUR MAP CALLED points
+// IT IS SETTING ALL OF THE ACTIONS THAT ARE GOING TO HAPPEN WHEN YOU HOVER AND CLICK ON YOUR POINTS
+// NOTE THE fitBounds() AT THE END -- THAT CENTERS AND ZOOMS THE MAP BASED ON YOUR POINTS
+
+	var points;
+
+	function resetHighlight(e) {
+		points.resetStyle(e.target);
+		info.update();
+	}
+
+	function zoomToFeature(e) {
+		map.fitBounds(e.target.getBounds());
+	}
+
+	function onEachFeature(feature, layer) {
+		layer.on({
+			mouseover: highlightFeature,
+			mouseout: resetHighlight,
+			click: updateArticle
+		});
+	}
+
+	points = L.geoJson(pointsData, {
+		style: style,
+    pointToLayer: function(feature, latlng) {
+
+        return new L.CircleMarker(latlng);
+
+    },
+    onEachFeature: onEachFeature
+	}).addTo(map);
+
+</script>
+<script>
+// BELOW IS A JQUERY FUNCTION THAT THE TEXT CHANGES IN THE DROP-DOWN MENU
+// AND EXECUTES CHANGES ON THE MAP BASED ON THE GROUP ID OF YOUR SHAPES
+
+	$(document).ready(function () {
+	    $('#select-menu').change(function () {
+		var selectedGroup = $('#select-menu').val();
+		
+		points.eachLayer(function (layer) {
+			if (selectedGroup == 0)
+		    {
+		    	map.removeLayer(layer);
+		    	map.addLayer(layer);
+		    }
+		    else if (selectedGroup == 1) {
+			// If the layer's id is different from the selected one, remove it from the map
+			 	map.removeLayer(layer);
+			 	if (layer.feature.properties.proportions_M > 67) {
+			 		map.addLayer(layer);
+			 	}
+				
+		    }
+		    else if (selectedGroup == 2) {
+			// Otherwise add it do the map
+				map.removeLayer(layer);
+				if (layer.feature.properties.proportions_F > 33) {
+			 		map.addLayer(layer);
+			 	}
+		    }
+		});
+
+	});
+	});
+</script>
+
+
+</body>
+</html>
