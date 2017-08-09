@@ -1,7 +1,6 @@
 ---
 
-About
-
+title: About
 
 ---
 
