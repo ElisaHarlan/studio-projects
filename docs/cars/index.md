@@ -1,8 +1,6 @@
-#The cozy relation between the German Carindustry and the Government
+# The cozy relation between the German Carindustry and the Government
 
-----------------------------------------
-
-####by Elisa Harlan
+#### by Elisa Harlan
 
 Emmissions rigging and the accusation of forming a cartel seem to only be the tip of the iceberg of close links in Germany’s car industry. The weekly magazine "DER SPIEGEL" recently disclosed that the automotive companies have been discussing their manipulations with each other. As a result the manufacturers are threatening cartel procedures and new millions of penalty from both the US and the EU Commission. 
 
@@ -58,8 +56,6 @@ To really understand, how the internal decision process looks like in order to s
 ![](Top_10_Money_to_Business.png)
 
 The data used for this project is extracted from two so-called "Kleine Anfrage". Opposition parties in the parliament do have the option to write requests to the government to which the government is obliged to answer in a certain time span. The documents have to be published.
-
-----------------------------------------
 
 Please find the relevant documents here: 
 [Kleine Anfrage - Kontakte der Bundesregierung zur Automobilindustrie](http://dip21.bundestag.de/dip21/btd/18/128/1812880.pdf)
