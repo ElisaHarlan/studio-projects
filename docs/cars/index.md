@@ -13,7 +13,7 @@ This is one of many incidents which show the close ties between politics and the
 The figure below shows the contacts between German businesses that either make their money with cars or are automotive suppliers. Further displayed are contacts with the labour unions, such as IG Metall that represent the employees of the metal, electrical and steel sector. It is also important to investigate which other actors may have a vested interest in transport policy. 
  
 
-![](Sankey_business_contact.png)
+![](Sankey_connections.png)
 
 
 Many processes in transport policy raise the question of the influence of the automobile industry and other actors on politics. As the party DIE LINKE writes in its "Kleine Anfrage", this influence reaches from the expansion of the public transport sector as a public-private partnership (PPP) to the negotiations on the reduction of CO2 values ​​for vehicles at European level. The discussion of greenhouse gas and pollutant emissions from motor vehicles is of great public interest in particular, especially in cities like Stuttgart, where particulate matters regularly hit the threshold that was set by the European Union.
@@ -22,7 +22,7 @@ Focusing on the ten most frequent contacts, Volkswagen (VW AG) played a prominen
 
 
 
-![](Top_10_businesses_contacts.png)
+![](Top_10_Lobbyists_Companies.png)
 
 
 
@@ -37,25 +37,25 @@ This vagueness has a long tradition in Germany: In March 2015 the Federal Govern
 
 The figure below also just melts down the data that was shown before in order to show the exact number of the Top 5 interactions between the managers and the government. 
 
-![](Top_5_Managers_in_Contact_Ministries.png)
+![](Top_5_Manager.png)
 
 The second part of the project deals with subsidies that German carmakers receive from the government for different purposes. A significant part of the money goes to "Research and Development" or "General Investment".
 At least in the present documents (for sources, see link below) published by the government it does not become entirely clear into which projects the money goes to. 
 
 As expected, the most money is distributed by the Federal Ministry for Economic Affairs and Energy, followed closely by the Ministry for Education and Science. 
 
-![](Total_subsidies.png)
+![](Top_4_Ministries.png)
 
 As the barchart below is indicating, big players, like Siemens and Daimler are profiting the most from those kind of subsidies. During the last years, Siemens was able to receive more than 250 Mio. Euro from the government for research purposes. 
  
 
-![](Top_5_Businesses_Subsidies.png)
+![](Top_5_Money_Companies.png)
 
 Looking at how the ministries distribute their money, it can be seen that some ministries favor certain companies. 
 To really understand, how the internal decision process looks like in order to select the companies and to what kind of projects the money exactly goes to, more research needs to be done.  
 
 
-![](Top_10_Money_to_Business.png)
+![](Top_10_Money_to_Businesses.png)
 
 The data used for this project is extracted from two so-called "Kleine Anfrage". Opposition parties in the parliament do have the option to write requests to the government to which the government is obliged to answer in a certain time span. The documents have to be published.
 
