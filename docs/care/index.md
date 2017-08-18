@@ -16,14 +16,14 @@ Taking a look at the 16 capital cities of the "Bundesländer", the regions in Ge
 
 When exmining the data, one has to keep in mind several restrictions:  Firstly, it is not displayed how the newly employed personell is qualified for the job. Secondly, it is a fact that if people get older, they suffer from several illnesses at the same time. This is more time intensive and might underline the impression of staff shortage.
 
-![](Sammlung_PflegeH_vs_Plaetze_PflegeH_absolut.png)
+![](Zeichenfläche 1.png)
 
 
 The second thing that is constantly repeated, is that care must be organised differently in the future. It seems that the trend is downward, the concept of a nursery home is getting more and more unpopular. Families want to look after their elderly at home, but at the same time they don't want to give up their independece, their jobs to look after them. Since a couple of years it is getting more and more popular to have a nurse or a similarily trained person at home. The families who can afford it, pay between 2000 and 6000 Euros per month. The nurse is there for the old person 24 hours a day. Those persons are mostly women, coming from Eastern European countries.
 
-![](Sammlung_pct_change_PflegeH_vs_PflegeD.png)
+![](Zeichenfläche 2.png)
 
-The option that is somehow in between is nursery services, mainly provided by the Christian welfare and social work. These nurses come by everyday and help with serving food, bathing and giving injections. As we can see from the chart, in some cities, the nursery services are growing a lot, some cities seem to put emphasize on developing new nursery homes. 
+The option that is somehow in between is nursery services, mainly providid by the Christian welfare and social work. These nurses come by everyday and help with serving food, bathing and giving injections. As we can see from the chart, in some cities, the nursery services are growing a lot, some cities seem to put emphasize on developing new nursery homes. 
 This could be the starting point how cities handle their aging population. 
 
 ----------------------------------------
