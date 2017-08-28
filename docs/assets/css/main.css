@@ -40,3 +40,9 @@ a {
   padding: 3px 6px;
   color: #000;
 }
+
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}

@@ -18,7 +18,6 @@ In the case of board members, companies are currently free to decide which quota
 
 ![](Women_on_board_BM.png)
 
-
 ----------------------------------------
 
 Please find the relevant documents here: 
